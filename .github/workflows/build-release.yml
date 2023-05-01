@@ -1,6 +1,4 @@
 // .github/workflows/build-release.yml
-name: Build Release
-
 on:
   workflow_dispatch:
   push:
@@ -14,6 +12,8 @@ env:
   ARTIFACTORY_USERNAME: ${{ secrets.ARTIFACTORY_USERNAME }}
   ARTIFACTORY_PASSWORD: ${{ secrets.ARTIFACTORY_PASSWORD }}
   ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+
+name: Build Release
 
 jobs:
   build:
